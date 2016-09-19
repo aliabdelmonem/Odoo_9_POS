@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="TransferTable">
+        <span class="control-button transfer-table">
+            <i class="fa fa-files-o"></i>
+            Transfer
+        </span>
+    </t>
+
+
+        <t t-name="TransferWidget">
+        <div class="modal-dialog">
+            <div class="popup popup-select-table" >
+
+                <p class="title">
+                    <t t-esc=" widget.options.title || '' " /></p>
+
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                   <span>Tables
+                   <select class='transfer select' style="width:300px;height:30px;">
+                          <t t-foreach='widget.pos.tables' t-as='tables'>
+                              <option t-att-value='tables.id'>
+                                  <t t-esc='tables.name +" /  ( "+tables.floor_id[1]+" )"'/>
+                               </option>
+                          </t>
+                 </select>
+                   </span>
+                <div class="footer">
+
+
+                    <div class="button confirm">
+                        Confirm
+                    </div>
+                    <div class="button cancel">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+
+
+
+
+
+
+</templates>

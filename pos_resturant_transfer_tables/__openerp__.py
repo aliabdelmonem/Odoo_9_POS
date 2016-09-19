@@ -1,0 +1,15 @@
+{
+    'name': 'POS Restaurant Transfer Orders Between Tables',
+    'version': '1.0',
+    'category': 'Point of sale',
+    'author': 'Ali Abdelmonem',
+    'website': 'aliabdelmonem2@gmail.com',
+    'summary': 'Add Option Of Transfer Tables',
+    'description': """ Add Option Of Transfer Tables """,
+    'depends': ['point_of_sale','base','pos_restaurant'],
+    'data': ['views/templates.xml'],
+    'qweb': ['static/src/xml/transfer_table.xml',],
+    'installable': True,
+    'active': False,
+    'auto_install': False,
+}
