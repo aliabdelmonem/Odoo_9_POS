@@ -3,7 +3,7 @@
     'version': '1.0',
     'category': 'Point of sale',
     'author': 'Ali Abdelmonem',
-    'website': '',
+    'website': 'aliabdelmonem2@gmail.com',
     'summary': 'Print Greetings Card In POS ',
     'description': """ This Module Created For Print Greeings Card Via POS Only By Clicking The Button Of Greeting Card And Fill The
 
