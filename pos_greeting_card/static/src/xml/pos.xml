@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="PrintGiftButton">
+        <div class='control-button js_gift_card'>
+            <i class='fa fa-tag' /> Print Greetings Card
+        </div>
+    </t>
+
+
+    <t t-name="GiftCardForm">
+        <div class="modal-dialog">
+            <div class="popup popup-textinput" >
+
+                <p class="title"><t t-esc=" widget.options.title || '' " /></p>
+
+
+                <div>
+                   <input type="text" class="to" id="to"  placeholder="Message Will Send To"/>
+                </div>
+                <br/>
+
+
+                <div style="vertical-align: middle;">
+                   <textarea class="message" id="message" rows="4" cols="37"  placeholder="Message"></textarea>
+                </div>
+                <br/>
+
+                <div>
+                 <input type="text" class="from" id="from"  placeholder="Person Name Will Send The Message"/>
+                </div>
+
+
+                <div class="footer">
+
+
+                    <div class="button confirm">
+                        Show The Card
+                    </div>
+                    <div class="button cancel">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+
+
+
+
+    <t t-name="GreetingCardTemp">
+        <div class='receipt-screen screen'>
+            <div class='screen-content'>
+                <div class='top-content'>
+
+                    <button class="button back" id="input_cancel_pack">Back</button>
+
+                    <h1>Greeting Card Printing</h1>
+
+                </div>
+                <div class="centered-content">
+                    <div class="button print_browser">
+                        <i class='fa fa-print'></i> Print Via Browser
+                    </div>
+
+                    <div class="button print_printer">
+                        <i class='fa fa-print'></i> Print Via Printer
+                    </div>
+
+                    <div class="pos-receipt-container">
+                       <div class="pos-sale-ticket">
+                           <div>
+                               <label id="lbl_sender"></label>
+                           </div>
+                           <br/>
+                           <div>
+                               <label id="lbl_message"></label>
+                           </div>
+                           <br/>
+                           <div>
+                               <label id="lbl_receiver"></label>
+                           </div>
+
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+
+
+
+</templates>
