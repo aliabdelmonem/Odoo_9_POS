@@ -1,0 +1,388 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * project_installtion_contract
+#
+# Translators:
+# FIRST AUTHOR <info@amekcapital.com>, 2016
+# Ali Abdelmonem, 2016
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo 8.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-30"
+"PO-Revision-Date: 2016-06-30"
+"Last-Translator: Ali Abdelmonem"
+"Language-Team: Arabic (http://www.transifex.com/odoo/odoo-8/language/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+
+#. module: project_installation_contract
+#: field:installation.contract,customer:0
+msgid "Customer"
+msgstr "العميل"
+
+
+#. module: project_installation_contract
+#: field:installation.contract,name:0
+msgid "Contract Description"
+msgstr "وصف العقد"
+
+
+#. module: project_installation_contract
+#: field:installation.contract,start_date:0
+msgid "Start Date"
+msgstr "تاريخ البداية"
+
+#. module: project_installation_contract
+#: field:installation.contract,end_date:0
+msgid "End Date"
+msgstr "تاريخ الانتهاء"
+
+#. module: project_installation_contract
+#: field:installation.contract,amount_to_contract:0
+msgid "Contract Amount"
+msgstr "قيمة التعاقد"
+
+#. module: project_installation_contract
+#: field:installation.contract,down_payment:0
+msgid "Down Payment (%)"
+msgstr "الدفعة المقدمة"
+
+
+#. module: project_installation_contract
+#: field:installation.contract,journal:0
+msgid "Journal"
+msgstr "دفتر اليومية"
+
+
+#. module: project_installation_contract
+#: field:installation.contract,donw_payment_paid:0
+msgid "Down Payment Paid"
+msgstr "الدفعة المقدمه دفعت"
+
+
+
+#. module: project_installation_contract
+#: field:installation.contract,contract_payments:0
+msgid "Contract Payments"
+msgstr "دفعات العقد"
+
+
+#. module: project_installation_contract
+#: field:installation.contract,account_entry_d_payment:0
+msgid "Down Payment Entry"
+msgstr "قيد الدفعه المقدمة"
+
+
+#. module: project_installation_contract
+#: field:installation.contract,account_for_deferred_reveunes:0
+msgid "Deferred Account"
+msgstr "حساب الدفعات المقدمة"
+
+#. module: project_installation_contract
+#: field:installation.contract,account_for_revenues:0
+msgid "Revenues Account"
+msgstr "حساب الايراد"
+
+
+
+#. module: project_installation_contract
+#: field:installation.contract,customer_account:0
+msgid "Customer Account"
+msgstr "حساب العميل"
+
+#. module: project_installation_contract
+#: field:installation.contract,no_money_back:0
+msgid "No Money Back"
+msgstr "عدم استرداد الدفعه المقدمة"
+
+#. module: project_installation_contract
+#: field:installation.contract,account_entry_no_money_paid:0
+msgid "No Money Back Entry"
+msgstr "قيد عدم استرداد الدفعه المقدمة"
+
+#. module: project_installation_contract
+#: field:installation.contract,contract_items:0
+msgid "Items To Be Delivered"
+msgstr "المنتجات التى سوف تورد"
+
+#. module: project_installation_contract
+#: field:installation.contract,delivery_order_id:0
+msgid "Delivery Order"
+msgstr "اذن الصرف للعقد"
+
+#. module: project_installation_contract
+#: field:installation.contract,src_location:0
+msgid "Source Location"
+msgstr "مخزن المنتجات"
+
+
+
+#. module: project_installation_contract
+#: field:installation.contract,delivery_order_created:0
+msgid "Delivery Order Created"
+msgstr "تم انشاء اذن الصرف من المخزن"
+
+
+
+
+
+#. module: project_installation_contract
+#: field:contract.payments,name:0
+msgid "Payment Desc"
+msgstr "وصف الدفعه"
+
+
+#. module: project_installation_contract
+#: field:contract.payments,due_date:0
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+
+#. module: project_installation_contract
+#: field:contract.payments,amount:0
+msgid "Payment Amount"
+msgstr "قيمة الدفعة"
+
+
+
+#. module: project_installation_contract
+#: field:contract.payments,percentage:0
+msgid "Percentage %"
+msgstr "النسبة % من العقد"
+
+
+
+#. module: project_installation_contract
+#: field:contract.payments,contract:0
+msgid "Contract"
+msgstr "العقد"
+
+
+
+#. module: project_installation_contract
+#: field:contract.payments,stage:0
+msgid "Stage"
+msgstr "المرحلة"
+
+
+
+#. module: project_installation_contract
+#: field:contract.payments,:0
+msgid ""
+msgstr ""
+
+
+
+#. module: project_installation_contract
+#: field:contract.payments,paid:0
+msgid "Posted"
+msgstr "تم انشاءها"
+
+
+
+#. module: project_installation_contract
+#: field:contract.payments,move_id:0
+msgid "Entry"
+msgstr "قيد"
+
+
+#. module: project_installation_contract
+#: field:contract.payments,estimate_start:0
+msgid "Estimate Start Date"
+msgstr "تاريخ البداية المتوقع"
+
+
+#. module: project_installation_contract
+#: field:contract.payments,estimate_end:0
+msgid "Estimate End Date"
+msgstr "تاريخ الانتهاء المتوقع"
+
+
+
+#. module: project_installation_contract
+#: field:contract.payments,actual_start:0
+msgid "Actual Start Date"
+msgstr "تاريخ البداية الفعلى"
+
+
+#. module: project_installation_contract
+#: field:contract.payments,actual_end:0
+msgid "Actual End Date"
+msgstr "تاريخ الانتهاء الفعلى"
+
+
+#. module: project_installation_contract
+#: field:contract.items,product:0
+msgid "Product"
+msgstr "المنتج"
+
+
+
+#. module: project_installation_contract
+#: field:contract.items,product_qty:0
+msgid "Quantity"
+msgstr "عدد الوحدات"
+
+
+#. module: project_installation_contract
+#: field:contract.items,contract:0
+msgid "Contract"
+msgstr "العقد"
+
+
+
+#. module: project_installation_contract
+#: selection:installation.contract,state:0
+msgid "Contract Signed"
+msgstr "توقيع العقد"
+
+
+#. module: project_installation_contract
+#: selection:installation.contract,state:0
+msgid "Draft Agreements"
+msgstr "الاتفاق على الرسومات"
+
+
+#. module: project_installation_contract
+#: selection:installation.contract,state:0
+msgid "Ducts Installation"
+msgstr "تركيب الدكتات"
+
+#. module: project_installation_contract
+#: selection:installation.contract,state:0
+msgid "Internal Machines"
+msgstr "المكائن الداخلية"
+
+
+#. module: project_installation_contract
+#: selection:installation.contract,state:0
+msgid "External Machines"
+msgstr "المكائن الخارجية"
+
+
+#. module: project_installation_contract
+#: selection:installation.contract,state:0
+msgid "Operation"
+msgstr "التشغيل"
+
+
+
+
+
+
+#. module: project_installation_contract
+#: selection:contract.payments,stage:0
+msgid "Ducts Installation"
+msgstr "تركيب الدكتات"
+
+#. module: project_installation_contract
+#: selection:contract.payments,stage:0
+msgid "Internal Machines"
+msgstr "المكائن الداخلية"
+
+
+#. module: project_installation_contract
+#: selection:contract.payments,stage:0
+msgid "External Machines"
+msgstr "المكائن الخارجية"
+
+
+#. module: project_installation_contract
+#: selection:contract.payments,stage:0
+msgid "Operation"
+msgstr "التشغيل"
+
+
+
+
+
+#. module: project_installation_contract
+#: view:installation.contract:project_installation_contract.installation_contract_form
+msgid "Confirm Down Payment"
+msgstr "تأكيد الدفعه المقدمة"
+
+
+#. module: project_installation_contract
+#: view:installation.contract:project_installation_contract.installation_contract_form
+msgid "Create Delivery Order"
+msgstr "انشاء امر صرف من المخزن"
+
+
+
+#. module: project_installation_contract
+#: view:installation.contract:project_installation_contract.installation_contract_form
+msgid "Contract Description"
+msgstr "وصف العقد"
+
+
+
+
+#. module: project_installation_contract
+#: view:installation.contract:project_installation_contract.installation_contract_form
+msgid "No Money Back"
+msgstr "عدم ارجاع الدفعه المقدمة"
+
+
+
+#. module: project_installation_contract
+#: view:installation.contract:project_installation_contract.installation_contract_form
+msgid "Contract Payments"
+msgstr "دفعات العقد"
+
+
+#. module: project_installation_contract
+#: view:installation.contract:project_installation_contract.installation_contract_form
+msgid "Accounting Information"
+msgstr "بيانات الحسابات"
+
+
+
+#. module: project_installation_contract
+#: view:installation.contract:project_installation_contract.installation_contract_form
+msgid "Items To Be Delivered"
+msgstr "المنتجات الواجبة التسليم للعميل"
+
+
+
+
+#. module: project_installation_contract
+#: view:installation.contract:project_installation_contract.action_installation_contract
+msgid "Installation Contract"
+msgstr "عقود التركيب والتوريد"
+
+
+
+#. module: project_installation_contract
+#: model:ir.actions.act_window,name:project_installation_contract.action_installation_contract
+#: model:ir.ui.menu,name:project_installation_contract.menu_action_bank_tree
+#: view:installation.contract:project_installation_contract.installation_contract_tree
+msgid "Installation Contract"
+msgstr "عقود التركيب والتوريد"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

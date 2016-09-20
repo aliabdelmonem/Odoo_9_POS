@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<openerp>
+    <data>
+
+
+     <record id="installation_contract_form" model="ir.ui.view">
+            <field name="name">installation.contract.form</field>
+            <field name="model">installation.contract</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+
+
+                        <button type="object" name="gen_amount_entry" string="Confirm Down Payment" attrs="{'invisible': [('donw_payment_paid','=',True)]}"></button>
+                        <button type="object" name="gen_not_refund" string="No Money Back" attrs="{'invisible': ['|' ,('state','!=','stage_2') , ('no_money_back','=', True)]}"></button>
+
+                        <field name="state" widget="statusbar" clickable="True"/>
+
+
+                    </header>
+                    <!--<sheet string="Create Installation Contract">-->
+
+
+                        <div class="oe_title">
+                        <label for="name" class="oe_edit_only" string="Contract Description"/>
+                        <h1>
+                            <field name="name" string="Contract Description"/>
+                        </h1>
+                       </div>
+
+                        <group>
+                            <group>
+                             <field name="customer"/>
+
+                              <field name="amount_to_contract"/>
+                              <field name="down_payment"/>
+                              <field name="no_money_back"/>
+                                <field name="account_entry_no_money_paid"/>
+                                <field name="src_location"/>
+
+
+                        </group>
+
+                            <group>
+
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                            <field name="donw_payment_paid"/>
+                            <field name="account_entry_d_payment"/>
+                            <field name="delivery_order_created"/>
+                            <field  name="delivery_order_id" />
+                        </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Contract Payments">
+                                <field name="contract_payments" domain="['contract', '=', active_id]" context="{'contract': active_id}">
+                                    <tree>
+                                        <field name="contract" />
+
+                                        <field name="estimate_start"/>
+                                        <field name="estimate_end"/>
+                                        <field name="actual_start"/>
+                                        <field name="actual_end"/>
+
+
+                                        <field name="name" />
+                                        <field name="due_date" />
+                                        <field name="amount" />
+                                        <field name="percentage" />
+                                        <field name="stage"/>
+                                        <field name="move_id" />
+                                        <field name="paid"/>
+                                        <button name="gen_payment_entry" attrs="{'invisible':[('paid','=',True)]}" icon="gtk-execute" string="Create Move" type="object"/>
+
+                                    </tree>
+                                </field>
+
+                            </page>
+                            <page string="Accounting Information">
+                                <group>
+                                 <field name="account_for_deferred_reveunes"/>
+                                 <field name="account_for_revenues"/>
+                                 <field name="customer_account"/>
+                                 <field name="journal"/>
+                                </group>
+                            </page>
+                            <page string="Items To Be Delivered">
+                                <field name="contract_items" domain="['contract', '=', active_id]" context="{'contract': active_id}">
+                                  <tree editable="top">
+                                      <field name="product"/>
+                                      <field name="product_qty"/>
+
+                                      <field name="contract" />
+
+                                  </tree>
+
+                                </field>
+                                <button name="gen_delivery_order" string="Create Delivery Order" type="object" attrs="{'invisible':[('delivery_order_created','=',True)]}"></button>
+
+
+
+
+                            </page>
+                        </notebook>
+
+                    <!--</sheet>-->
+
+
+                </form>
+            </field>
+        </record>
+
+
+     <record id="installation_contract_tree" model="ir.ui.view">
+            <field name="name">installation.contract.form</field>
+            <field name="model">installation.contract</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="customer"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="amount_to_contract"/>
+                    <field name="state" />
+
+
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="action_installation_contract" model="ir.actions.act_window">
+        <field name="name">Installation Contract</field>
+        <field name="res_model">installation.contract</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem
+        sequence="2"
+        parent="project.menu_project_management"
+        id="menu_action_bank_tree"
+        action="action_installation_contract"/>
+
+    </data>
+</openerp>
